@@ -1,0 +1,14 @@
+[
+
+             {"name": "excel_test","minio_bucket":"test","local_path":"path\\to\\minio_bucket","destination_table":"test"
+             ,"server_address":"bi2","file_format":".xlsx","database":"test","insert_strategy":"replace","delete_from_minio": 1
+			 ,"exclude_columns":["id"]
+             },
+			 
+			 {"name": "csv_test","minio_bucket":"test","local_path":"path\\to\\minio_bucket","destination_table":"test_csv"
+             ,"server_address":"bi2","file_format":".csv","database":"test","insert_strategy":"append","delete_from_minio": 0
+			 ,"include_column":[ "file_name","folder_name"] ,"has_header": 1,"include_only":["id","Result"],"start_row":5
+             }
+  
+
+]
